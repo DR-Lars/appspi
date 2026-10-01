@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(corepack --version)",
+      "Bash(corepack enable *)"
+    ]
+  }
+}

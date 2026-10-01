@@ -1,0 +1,15 @@
+services:
+  appspi:
+    build: .
+    container_name: appspi
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file: .env
+    environment:
+      DATABASE_PATH: /data/appspi.db
+    volumes:
+      - appspi-data:/data
+
+volumes:
+  appspi-data:
